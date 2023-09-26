@@ -1,4 +1,3 @@
-// Retrieve todo from local storage or initialize an empty array
 let todo = JSON.parse(localStorage.getItem("todo")) || [];
 const todoInput = document.getElementById("todoInput");
 const todoList = document.getElementById("todoList");
@@ -6,12 +5,11 @@ const todoCount = document.getElementById("todoCount");
 const addButton = document.getElementById("addButton");
 const deleteButton = document.getElementById("deleteButton");
 
-// Initialize
 document.addEventListener("DOMContentLoaded", function () {
   addButton.addEventListener("click", addTask);
   todoInput.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
-      event.preventDefault(); // Prevents default Enter key behavior
+      event.preventDefault();
       addTask();
     }
   });
@@ -39,7 +37,7 @@ function displayTasks() {
       item.disabled ? "checked" : ""
     }>
         <p id="todo-${index}" class="${
-      item.disabled ? "disabled" : ""
+      item.disabled ? "completed" : ""
     }" onclick="editTask(${index})">${item.text}</p>
       </div>
     `;
@@ -71,6 +69,9 @@ function editTask(index) {
 }
 
 function toggleTask(index) {
+  const todoCheckbox = document.getElementById(`input-${index}`);
+  todoCheckbox.classList.toggle("checked");
+
   todo[index].disabled = !todo[index].disabled;
   saveToLocalStorage();
   displayTasks();

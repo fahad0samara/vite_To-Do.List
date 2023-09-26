@@ -36,6 +36,7 @@ h2 {
 .input {
   display: flex;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .input-field {
@@ -107,7 +108,7 @@ li {
 /* Style for completed tasks */
 .todo-checkbox.checked + p {
   text-decoration: line-through;
-  color: #ccc;
+  color: #ccc; /* You can adjust the color for completed tasks */
 }
 
 .checkbox-container {
