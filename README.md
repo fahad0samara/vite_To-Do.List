@@ -10,6 +10,9 @@ This project is a simple to-do list application built using Vite, a fast build t
 - Delete all tasks at once.
 - Tasks are stored in the browser's local storage.
 
+- ![screencapture-localhost-5173-2023-09-26-15_00_16](https://github.com/fahad0samara/vite_To-Do.List/assets/90055525/e047ccff-ce64-4f65-897e-092c4c735e57)
+
+
 ## How to Use
 
 1. Clone the repository to your local machine.
