@@ -56,7 +56,7 @@ h2 {
 }
 
 .btn:hover {
-  background-color: #15df0e;
+  background-color: #0d9e07; /* Slightly darken the hover color */
 }
 
 .scroll {
@@ -79,11 +79,8 @@ li {
   background-color: #fff;
 }
 
-.checkbox-container {
-  margin-right: 10px;
-}
-
-.checkbox {
+/* Style for the checkbox */
+.todo-checkbox {
   width: 20px;
   height: 20px;
   border: 2px solid #15df0e;
@@ -92,16 +89,30 @@ li {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
-.checkbox.checked {
+.todo-checkbox.checked {
   background-color: #15df0e;
+  border-color: #15df0e;
 }
 
-.checkbox.checked::before {
+.todo-checkbox.checked::before {
   content: "\2713";
   color: #fff;
   font-size: 16px;
+}
+
+/* Style for completed tasks */
+.todo-checkbox.checked + p {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
 }
 
 .task-text {
@@ -152,15 +163,3 @@ li {
 .delete-all-button:hover {
   background-color: #d42d23;
 }
-
-.todo-checkbox{
-  width: 20px;
-  height: 20px;
-  border: 2px solid #15df0e;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
