@@ -1,0 +1,166 @@
+/* Reset default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo {
+  background-color: #fff;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input {
+  display: flex;
+  gap: 10px;
+}
+
+.input-field {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn {
+  background-color: #15df0e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #15df0e;
+}
+
+.scroll {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.checkbox-container {
+  margin-right: 10px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #15df0e;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox.checked {
+  background-color: #15df0e;
+}
+
+.checkbox.checked::before {
+  content: "\2713";
+  color: #fff;
+  font-size: 16px;
+}
+
+.task-text {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.delete-button {
+  background-color: #ff3b30;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #d42d23;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.counter {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.counter p {
+  font-size: 16px;
+  color: #333;
+}
+
+.delete-all-button {
+  background-color: #ff3b30;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-all-button:hover {
+  background-color: #d42d23;
+}
+
+.todo-checkbox{
+  width: 20px;
+  height: 20px;
+  border: 2px solid #15df0e;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
